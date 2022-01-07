@@ -34,3 +34,19 @@
   "currency": "TL"
 }
  ```
+ 
+   * `/api/products`
+
+   API Accepts <strong>POST</strong> request. Save product.
+
+   Request:
+```json
+ {
+  "_id": "b2dc7b494d9e2c75d64cc722ade4e63",
+  "name": "Döner",
+  "description": "1 Porsiyon yaprak döner",
+  "categoryId": "10aeda2dfe374764e33eb14b208b262f",
+  "price": 25.9,
+  "currency": "TL"
+}
+ ```
