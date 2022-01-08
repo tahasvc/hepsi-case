@@ -2,6 +2,7 @@
 # Hepsiburada Case 
 - Product and category list includes endpoints.
 - The product is listed with 5-minute caches with the help of redis
+- Errors in the application are logged
 <br/>
 
 ## Running with Docker
@@ -79,7 +80,7 @@
  ```
  
    Response:
-```
+```json
 true
  ```
  
