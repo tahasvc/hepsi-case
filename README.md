@@ -14,10 +14,12 @@
 
 
 ## How to Use
+
+#### Product Service
   
   * `/api/products`
 
-   API Accepts <strong>GET</strong> request. Get product list.
+   API Accepts <strong>GET</strong> request. Get product.
 
    Response:
 ```json
@@ -50,3 +52,85 @@
   "currency": "TL"
 }
  ```
+
+   * `/api/products`
+
+   API Accepts <strong>PUT</strong> request. Update product.
+
+   Request:   `/api/products/b2dc7b494d9e2c75d64cc722ade4e63`
+```json
+ {
+  "_id": "b2dc7b494d9e2c75d64cc722ade4e63",
+  "name": "Döner",
+  "description": "1 Porsiyon yaprak döner",
+  "categoryId": "10aeda2dfe374764e33eb14b208b262f",
+  "price": 25.9,
+  "currency": "TL"
+}
+ ```
+ 
+    * `/api/products`
+
+   API Accepts <strong>DELETE</strong> request. Delete product.
+
+   Request:
+```
+/api/products/b2dc7b494d9e2c75d64cc722ade4e63
+ ```
+ 
+   Response:
+```
+true
+ ```
+ 
+ #### Category Service
+ 
+ 
+   * `/api/categories`
+
+   API Accepts <strong>GET</strong> request. Get categories.
+
+   Response:
+```json
+{
+  "_id": "10aeda2dfe374764e33eb14b208b262f",
+  "name": "Türk Mutfağı",
+  "description": "Türk mutfağına ait lezzetler"
+}
+```
+   * `/api/categories`
+
+   API Accepts <strong>POST</strong> request. Save categories.
+
+   Request:
+```json
+{
+  "name": "Türk Mutfağı",
+  "description": "Türk mutfağına ait lezzetler"
+}
+```
+
+   * `/api/categories`
+
+   API Accepts <strong>PUT</strong> request. Update categories.
+
+   Request: `/api/categories/10aeda2dfe374764e33eb14b208b262f`
+```json
+{
+  "_id": "10aeda2dfe374764e33eb14b208b262f",
+  "name": "Türk Mutfağı",
+  "description": "Türk mutfağına ait lezzetler"
+}
+```
+
+   * `/api/categories`
+
+   API Accepts <strong>DELETE</strong> request. Delete categories.
+
+   Request: 
+   `/api/categories/10aeda2dfe374764e33eb14b208b262f`
+   
+   Response:
+```json
+true
+```
