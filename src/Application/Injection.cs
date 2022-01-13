@@ -27,7 +27,7 @@ namespace Application
                 action.Configuration = "localhost:6379";
                 action.InstanceName = "";
             });
-            services.AddTransient<ICacheService, CacheService>();
+            services.AddScoped<ICacheService, CacheService>();
             #endregion
 
 
